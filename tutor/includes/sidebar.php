@@ -54,14 +54,14 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Dashboard -->
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a href="index.php" class="nav-link <?php if($active_page == "dashboard"){echo "active";} ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
 
                 <!-- Schedule and Messages -->
-                <li class="nav-item has-treeview">
+                <li class="nav-item has-treeview <?php if($active_page == "dashboard" or $active_page == "message"){echo "active";} ?>">
                     <a href="#" class="nav-link">
                         <i class="nav-icon far fa-calendar-alt"></i>
                         <p>
@@ -71,13 +71,13 @@ if ($stmt = mysqli_prepare($conn, $sql)) {
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="schedule.php" class="nav-link <?php if($active_page == "schedule"){echo "active";} ?>">
                                 <i class="far fa-calendar-alt nav-icon"></i>
                                 <p>Schedule</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="#" class="nav-link <?php if($active_page == "message"){echo "active";} ?>">
                                 <i class="fas fa-envelope nav-icon"></i>
                                 <p>Messages</p>
                             </a>

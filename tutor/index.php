@@ -1,4 +1,5 @@
 <?php
+$active_page = "dashboard";
 include('../includes/conn.php');
 include('includes/header.php');
 include('includes/navbar.php');

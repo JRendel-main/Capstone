@@ -70,7 +70,7 @@ include('includes/sidebar.php');
                   </li>
                 </ul>
 
-                <a href="#" class="btn btn-danger btn-block"><b><i class="fa fa-eye"></i> View Schedule</b></a>
+                <a href="viewschedule.php?tutorid=<?php echo $tutorid;?>" class="btn btn-danger btn-block"><b><i class="fa fa-eye"></i> View Schedule</b></a>
               </div>
               <!-- /.card-body -->
             </div>

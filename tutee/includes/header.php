@@ -14,6 +14,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css" />
     <!-- Theme style -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
 
@@ -59,6 +62,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     .bg-gradient-lbh {
         background: linear-gradient(to right, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    }
+    #calendar {
+      margin-top: 20px;
+    }
+
+    /* Responsive styles */
+    @media screen and (max-width: 767px) {
+      .container {
+        max-width: 100%;
+        padding: 5px;
+      }
     }
 </style>
 
